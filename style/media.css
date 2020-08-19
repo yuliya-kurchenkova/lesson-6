@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    .header__menu {
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    .header__title {
+        padding-left: 10px;
+    }
+    textarea {
+        font-size: calc(10px + 1vw);
+    }
+    input {
+        font-size: calc(10px + 1vw);
+    }
+}
