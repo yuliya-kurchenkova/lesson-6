@@ -4,21 +4,18 @@
     }
     
     body {
-        font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+        font-family: "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
     }
     
     .wrapper {
-        width: 100vw;
-        height: 100vh;
-        margin: 0 auto;
-        background: aqua;
+        max-width: 1280px;
+        margin: auto;
     }
     
     .header {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        flex-wrap: wrap;
         background: #55ADB7;
     }
     
@@ -82,11 +79,7 @@
         flex-direction: column;
         align-items: center;
         font-size: 1em;
-        background-image: url(../img/see-background.png);
-    }
-    
-    .col {
-        font-size: 1em;
+        background: url(../img/see-background.png) no-repeat;
     }
     
     h1 {
@@ -106,7 +99,7 @@
         border-radius: 6px;
     }
     
-    .button:hover {
+    button:hover {
         background: rgba(255, 255, 255, .2);
     }
     
@@ -114,15 +107,17 @@
         background: white;
     }
     
-    .container-round {
+    .items {
         display: flex;
         justify-content: center;
         padding: 122px 0 25px;
+        list-style-type: none;
     }
     
     .round {
         width: 9px;
         height: 9px;
+        margin-left: 12px;
         background: white;
         border-radius: 50%;
     }
@@ -154,8 +149,21 @@
         color: #4C505D;
     }
     
-    .pic {
-        padding-bottom: 80px;
+    .list {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .icon-backet {
+        background: url(../img/basket.png);
+    }
+    
+    .icon-earth {
+        background: url(../img/earth.png);
+    }
+    
+    .icon-portfolio {
+        background: url(../img/portfolio.png);
     }
     /*---------------------------------------Testimonial-------*/
     
@@ -179,6 +187,7 @@
     .image {
         width: 135px;
         height: 135px;
+        margin-left: 126px;
         background: url(../img/avatar.png) no-repeat -3px 0;
         background-size: auto 197px;
         border-radius: 50%;
