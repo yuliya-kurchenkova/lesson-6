@@ -1,0 +1,294 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    body {
+        font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+    }
+    
+    .wrapper {
+        width: 100vw;
+        height: 100vh;
+        margin: 0 auto;
+        background: aqua;
+    }
+    
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background: #55ADB7;
+    }
+    
+    .header__title {
+        font-size: calc(20px + 1vw);
+        font-family: 'Cherry Swash', cursive;
+        text-transform: capitalize;
+        color: white;
+    }
+    
+    .header__menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        height: 10px;
+        width: 75px;
+        background: white;
+    }
+    
+    .header__menu::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        width: 75px;
+        height: 10px;
+        background: white;
+    }
+    
+    .header__menu::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        width: 75px;
+        height: 10px;
+        background: white;
+    }
+    
+    .header__link {
+        font-size: calc(10px + 1vw);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: white;
+    }
+    
+    .header__link::after {
+        content: "/";
+        font-size: 1.2em;
+        color: white;
+    }
+    
+    .active::after {
+        content: '';
+    }
+    /*-----------------------------Main-Container-----------*/
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1em;
+        background-image: url(../img/see-background.png);
+    }
+    
+    .col {
+        font-size: 1em;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: calc(20px + 3vw);
+        padding: 130px 304px 50px;
+        color: #E4E4E4;
+    }
+    
+    .button {
+        margin-top: 33px;
+        padding: 1em 2em;
+        font-size: calc(1em + 1vw);
+        color: white;
+        background: transparent;
+        border: 3px solid #ffffff;
+        border-radius: 6px;
+    }
+    
+    .button:hover {
+        background: rgba(255, 255, 255, .2);
+    }
+    
+    .button:active {
+        background: white;
+    }
+    
+    .container-round {
+        display: flex;
+        justify-content: center;
+        padding: 122px 0 25px;
+    }
+    
+    .round {
+        width: 9px;
+        height: 9px;
+        background: white;
+        border-radius: 50%;
+    }
+    
+    .round-grey {
+        background: grey;
+    }
+    /*---------------------------Holder--------*/
+    
+    .holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        background: wheat;
+    }
+    
+    h2 {
+        padding: 0 129px;
+        font-size: calc(20px + 2vw);
+        text-align: center;
+        color: #4C505D;
+    }
+    
+    .text {
+        margin: 39px 0 70px;
+        padding: 0 108px;
+        font-size: calc(10px + 1vw);
+        color: #4C505D;
+    }
+    
+    .pic {
+        padding-bottom: 80px;
+    }
+    /*---------------------------------------Testimonial-------*/
+    
+    .wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #00D089;
+    }
+    
+    .blockquote {
+        display: flex;
+        justify-content: center;
+        padding: 97px 0 0 134px;
+    }
+    
+    .img {
+        margin-left: 42px;
+    }
+    
+    .image {
+        width: 135px;
+        height: 135px;
+        background: url(../img/avatar.png) no-repeat -3px 0;
+        background-size: auto 197px;
+        border-radius: 50%;
+    }
+    
+    .name {
+        font-size: calc(10px + 1vw);
+        text-transform: uppercase;
+        color: #E4E4E4;
+    }
+    
+    .quotes {
+        width: 127px;
+        height: 92px;
+        background: url(../img/quotes.png) no-repeat #e4e4e400;
+    }
+    
+    .lead {
+        margin: 39px 0 70px;
+        padding: 0 108px;
+        font-size: calc(10px + 1vw);
+        color: #FFFFFF;
+    }
+    /*----------------------------------------------------------------------Contact-------*/
+    
+    .inner {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0 40px;
+        background: url(../img/map-background.png);
+    }
+    
+    .author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65vh;
+        height: 65vh;
+        background: white;
+        border: 3px solid #ffffff;
+        border-radius: 50%;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0 25px;
+        padding-bottom: 25px;
+        font-size: 1em;
+    }
+    
+    input {
+        width: 207px;
+        height: 32px;
+        margin-bottom: 10px;
+        padding: 1em 1em;
+        font-size: calc(1em + .5vw);
+        border: 1px solid #BDBDBD;
+    }
+    
+    textarea {
+        width: 207px;
+        height: 100px;
+        padding: 1em 1em;
+        font-size: calc(1em + .5vw);
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+    }
+    
+    .btn {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 70px;
+        height: 70px;
+        margin-top: 9px;
+        background: #00D089;
+        border: none;
+        border-radius: 50%;
+    }
+    
+    .line {
+        position: absolute;
+        top: 30px;
+        left: 9px;
+        height: 16px;
+        width: 33px;
+        border-radius: 6px;
+        background: white;
+        transform: rotate(42deg);
+    }
+    
+    .side {
+        position: absolute;
+        top: 29px;
+        left: 22px;
+        height: 15px;
+        width: 43px;
+        border-radius: 6px;
+        background: white;
+        transform: rotate(137deg);
+    }
+    /*--------------------------------------------------------Footer-------*/
+    
+    .copy {
+        font-size: calc(10px + 1vw);
+        text-transform: uppercase;
+        text-align: center;
+        color: #E4E4E4;
+        background: #00D089;
+    }
